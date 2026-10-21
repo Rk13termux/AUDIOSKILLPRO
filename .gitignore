@@ -1,0 +1,34 @@
+# --- Productos de audio (regenerables; el repo solo guarda guiones) ---------
+audios/**/*.mp3
+audios/**/*.wav
+audios/**/*.vtt
+
+# La union cruda y los masters nunca se versionan
+guion.mp3
+guion-PRO.mp3
+guion-PRO.wav
+guion-MASTER.wav
+telegram.mp3
+pack.mp3
+
+# Reportes intermedios del pipeline (los borra procesar.sh)
+.pro-*.env
+.pro-tmp/
+.measure*.txt
+
+# --- Credenciales y datos privados (NUNCA subir) ----------------------------
+.git-credentials
+.netrc
+*.pem
+*.key
+.env
+.env.*
+hosts.yml
+!*.env.example
+
+# --- Entorno local ----------------------------------------------------------
+__pycache__/
+*.pyc
+*.log
+*.tmp
+.DS_Store
